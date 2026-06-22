@@ -1,16 +1,147 @@
-# React + Vite
+# TaskVia - React Task Management Application
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Overview
 
-Currently, two official plugins are available:
+TaskVia is a simple and interactive task management application built using React.js. The application helps users organize daily tasks by assigning priorities and categories, tracking completion status, and monitoring overall progress through a visual progress bar.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## Features
 
-## React Compiler
+✅ Add new tasks
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+✅ Task input validation
 
-## Expanding the ESLint configuration
+✅ Assign task priorities:
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+* High
+* Medium
+* Low
+
+✅ Categorize tasks:
+
+* General
+* Work
+* Personal
+
+✅ Mark tasks as completed
+
+✅ Undo completed tasks
+
+✅ Delete tasks
+
+✅ Real-time progress tracking
+
+✅ Responsive and user-friendly interface
+
+## Validation Rules
+
+The application validates task inputs before adding them:
+
+* Empty tasks are not allowed
+* Numeric-only tasks are not allowed
+* Special characters are restricted
+* Tasks must start with an alphabetic character
+
+## Tech Stack
+
+### Frontend
+
+* React.js
+* JavaScript (ES6)
+* HTML5
+* CSS3
+
+## Project Structure
+
+src/
+
+├── TaskForm.js
+
+├── TaskList.js
+
+├── ProgressTracker.js
+
+├── App.js
+
+└── styles.css
+
+## Components
+
+### TaskForm
+
+Responsible for:
+
+* Accepting task input
+* Selecting priority
+* Selecting category
+* Validating user input
+* Adding tasks
+
+### TaskList
+
+Responsible for:
+
+* Displaying tasks
+* Completing tasks
+* Undoing completed tasks
+* Deleting tasks
+
+### ProgressTracker
+
+Responsible for:
+
+* Calculating completed tasks
+* Calculating completion percentage
+* Rendering progress bar
+
+## How to Run the Project
+
+### Clone Repository
+
+git clone https://github.com/sandhyatigadolli/TaskVia.git
+
+### Navigate to Project Directory
+
+cd TaskVia
+
+### Install Dependencies
+
+npm install
+
+### Start Development Server
+
+npm start
+
+The application will run at:
+
+http://localhost:3000
+
+## Future Enhancements
+
+* Local Storage Support
+* Task Search Functionality
+* Task Filtering
+* Dark Mode
+* Due Dates
+* User Authentication
+* Backend Integration using Spring Boot
+
+## Learning Outcomes
+
+This project helped in understanding:
+
+* React Components
+* Props
+* State Management using useState
+* Event Handling
+* Form Validation
+* Conditional Rendering
+* Dynamic Styling
+* Component-Based Architecture
+
+## Author
+
+Sandhya Subhas Tigadolli
+
+MCA Student | Java Full Stack Developer
+
+GitHub: https://github.com/sandhyatigadolli
